@@ -1,1 +1,29 @@
 // Navigation code here
+@bckgrnd-clr: lightgrey;
+@main-color: #23293B;
+
+//MOBILE
+@phone: ~"(max-width: 500px)";
+
+
+.top-section{
+
+  @media @phone {
+        width: 500px;
+
+    }
+
+    background-color: @bckgrnd-clr;
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        
+
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: @main-color;
+        }
+    }
+}
