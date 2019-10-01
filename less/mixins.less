@@ -1,14 +1,16 @@
 // Mixins Here
-.button(){
-    background-color: #23293B;
-  }
+.buttons(@background, @main){
+    background: @background;
+    color: @main;
+    border: 1px solid @border-real;
+    display: block;
+    width: 30%;
+    cursor: crosshair;
 
-//   .custom-layout(@justify, @align){
-// 	display: flex;
-// 	justify-content: @justify;
-// 	align-items: @align;
-// }
-// usage
-// .custom-layout(flex-end, center);
+    &:hover {
+        color: @background;
+        background: @main;
+    }
+  }
 
 
