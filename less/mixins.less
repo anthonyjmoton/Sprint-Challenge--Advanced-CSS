@@ -1,1 +1,16 @@
 // Mixins Here
+.buttons(@background, @main){
+    background: @background;
+    color: @main;
+    border: 1px solid @border-real;
+    display: block;
+    width: 30%;
+    cursor: crosshair;
+
+    &:hover {
+        color: @background;
+        background: @main;
+    }
+  }
+
+
